@@ -22,6 +22,7 @@ defmodule Evalixatir do
   ## Examples
   """
   def mac?(s) do
+    # Regex from https://stackoverflow.com/a/4260512/807703
     Regex.match?(~r/^([0-9a-fA-F]{2}[:-]){5}([0-9A-Fa-f]{2})$/, s)
   end
 end
