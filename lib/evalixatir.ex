@@ -35,4 +35,14 @@ defmodule Evalixatir do
   def username?(s) do
     Regex.match? ~r/^[\w.]{4,16}$/, s
   end
+
+  @doc """
+  Checks whether string is a valid alpha-numeric.
+
+  ## Examples
+  # TODO
+  """
+  def alpha_numeric?(s) do
+    Regex.match? ~r/^\w+$/, s
+  end
 end

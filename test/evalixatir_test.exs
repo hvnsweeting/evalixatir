@@ -53,4 +53,12 @@ defmodule EvalixatirTest do
   test "learnyouagoodelixirisalsosoverbose is too verbose username" do
     assert Evalixatir.username?("learnyouagoodelixirisalsosoverbose") == false
   end
+
+  test "123aHihi is alpha numeric" do
+   assert Evalixatir.alpha_numeric?("123aHihi") == true
+  end
+
+  test "123 Hihi is not alpha numeric coz space" do
+   assert Evalixatir.alpha_numeric?("123 Hihi") == false
+  end
 end
