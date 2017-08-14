@@ -14,6 +14,14 @@ defmodule EvalixatirTest do
     assert Evalixatir.integer?("-123") == true
   end
 
+  test "valid positive integer with plus sign" do
+    assert Evalixatir.integer?("+123") == true
+  end
+
+  test "valid integer with prefix Zero" do
+    assert Evalixatir.integer?("023") == true
+  end
+
   test "Invalid integer" do
     assert Evalixatir.integer?("12a3") == false
   end

@@ -13,7 +13,7 @@ defmodule Evalixatir do
 
   """
   def integer?(string) do
-    Regex.match?(~r/^-?\d+$/, string)
+    Regex.match?(~r/^[-+]?\d+$/, string)
   end
 
   @doc """
