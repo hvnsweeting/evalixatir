@@ -42,4 +42,15 @@ defmodule EvalixatirTest do
     assert Evalixatir.mac?("34:e6:d7:16:a7:1k") == false
   end
 
+  test "pik4chu is a good username" do
+    assert Evalixatir.username?("pik4chu") == true
+  end
+
+  test "pig is not a good username" do
+    assert Evalixatir.username?("pig") == false
+  end
+
+  test "learnyouagoodelixirisalsosoverbose is too verbose username" do
+    assert Evalixatir.username?("learnyouagoodelixirisalsosoverbose") == false
+  end
 end

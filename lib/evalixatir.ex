@@ -25,4 +25,14 @@ defmodule Evalixatir do
     # Regex from https://stackoverflow.com/a/4260512/807703
     Regex.match?(~r/^([0-9a-fA-F]{2}[:-]){5}([0-9A-Fa-f]{2})$/, s)
   end
+
+  @doc """
+  Checks whether string is a valid username with 4-16 chars
+
+  ## Examples
+  # TODO
+  """
+  def username?(s) do
+    Regex.match? ~r/^[\w.]{4,16}$/, s
+  end
 end
