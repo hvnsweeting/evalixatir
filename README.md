@@ -1,6 +1,6 @@
 # Evalixatir
 
-[![CircleCI](https://circleci.com/gh/hvnsweeting/evalixator.svg?style=svg)](https://circleci.com/gh/hvnsweeting/evalixator)
+[![CircleCI](https://circleci.com/gh/hvnsweeting/evalixatir.svg?style=svg)](https://circleci.com/gh/hvnsweeting/evalixatir)
 
 Elixir validator.
 
