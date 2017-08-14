@@ -45,4 +45,7 @@ defmodule Evalixatir do
   def alpha_numeric?(s) do
     Regex.match? ~r/^\w+$/, s
   end
+
+  ## TODO
+  # Email/IPv4/URL/UNIX path/SemVer/base64/hexcolor/float/UUID4/ISBN13
 end
